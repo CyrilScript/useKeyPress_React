@@ -8,7 +8,8 @@ export default function App() {
   const foxPress = useKeyPress("f");
   const leftArrow = useKeyPress("ArrowLeft");
   const rightArrow = useKeyPress("ArrowRight");
-
+  const upArrow = useKeyPress("ArrowUp");
+  const downArrow = useKeyPress("ArrowDown");
   return (
     <div>
       <div>h, s, r, f</div>
@@ -18,7 +19,9 @@ export default function App() {
         {robotPress && "🤖"}
         {foxPress && "🦊"}
         {leftArrow && "⬅️"}
-        {rightArrow && "➡"}
+        {rightArrow && "➡️"}
+        {upArrow && "⬆️"}
+        {downArrow && "⬇️"}
       </div>
     </div>
   );
